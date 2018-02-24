@@ -1,0 +1,19 @@
+np.linalg.norm(a,ord=None, axis=None, keepdims=False)
+linalg 表示范数，应该是以前学过的求模。
+ord 是顺序，axis是按照行或者列进行计算，
+
+
+keepdims是否保持二维属性
+
+  import numpy as np
+  a = np.array([[1,2],[3,4]])
+  #按行相加，保持二维属性
+  print（np.sum(a,axis=0,keepdims=True）)
+  
+  #按行相加，不保持二维属性
+  print（np.sum(a,axis=0,keepdims=False)）
+  
+  array([[3],[7]])
+  array([3,7])
+  
+  
