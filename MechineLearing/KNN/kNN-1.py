@@ -19,4 +19,4 @@ plt.show()
 
 #数据集归一化
 normMat,ranges,minVals = kNN.autoNorm(datingDataMat)
-print(normMat)
+print(normMat,ranges,minVals)
